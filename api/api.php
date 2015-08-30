@@ -6,7 +6,7 @@ include_once('sr_filter.php'); // sr_filter is used to insert items from summone
 define("ROOT",$_SERVER['DOCUMENT_ROOT'].'/',true);
 class api{
 
-    private $key = '90816578-c532-40d1-920f-d1f5012ced63'; // Private api key goes here
+    private $key = 'YOUR API KEY GOES HERE'; // Private api key goes here
 
     function __construct(){
 
