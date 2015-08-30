@@ -1,3 +1,8 @@
+
+/*
+First function that runs when you start champion select, start the 2nd sona track and add ajax.get the champion list and the initial text
+for the left container
+ */
 function startChampionSelect(){
     var turn = new buzz.sound( "/audio/yourturn", {
         formats: ["mp3"],
@@ -18,6 +23,12 @@ function startChampionSelect(){
 
 }
 
+/*
+@param object elem
+
+When a champion is selected we want to load in content specific to that champion, but also set some cookies which we can use later on in the process.
+We also thought it would be cool to play the champions select sound when you select them, because who wouldn't love that?
+ */
 function selectChampion(elem){
     var champ = $(elem).data('name');
     var champKey = $(elem).data('champkey');
@@ -40,13 +51,23 @@ function selectChampion(elem){
     getChampion(elem,champ);
 }
 
+/*
+@param object elem
+@param string champ
+
+This loads in the champion details page via our special ajax.get method
+ */
 function getChampion(elem,champ){
     var champDetailsLoad = function(){
         $('.active-champ-details-bio').mCustomScrollbar();
     };
-    ajax.get('champion-details.php','.champ-stats',champDetailsLoad,champ,'',300);
+    ajax.get('champion-details.php','.champ-stats',champDetailsLoad,champ,'',300); // we pass the champions name long as data to the champion-details.php file
 }
 
+/*
+This function is run when the champion-details.php file is loaded in, it is called from a <script> inside the php file itself. And basically takes all of the stats the champion has
+and animates them into a sliding bar. Pretty snazzy!
+ */
 function statBarSlide(){
     var stats = $('.active-champ-details').data();
     stats = stats.stats;

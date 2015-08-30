@@ -1,10 +1,12 @@
 <?php
-
+/*
+ * Setup the html needed for the itemslist
+ */
 include('../api/api.php');
 
 $itemlist = new api;
 $itemlist = $itemlist->getItems();
-//krumo($itemlist);
+
 
 $baseURL = "http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/";
 $tags = array();

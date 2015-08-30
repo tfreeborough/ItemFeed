@@ -42,11 +42,6 @@
     <video autoplay loop poster="/img/background-min.png" id="bgvid">
         <source src="/video/bg-vid-min.mp4" type="video/mp4">
     </video>
-    <!--
-    <div id="bg">
-        <img src="img/background-min.png" alt="">
-    </div>
-    -->
     <div class="page-container">
         <div class="page-left-container">
 
@@ -71,8 +66,4 @@
         </div>
     </div>
     </body>
-    <script>
-
-
-    </script>
 </html>

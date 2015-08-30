@@ -1,6 +1,8 @@
 <?php
+/*
+ * This is the base champion select page, before you have clicked on a champion icon.
+ */
 include('../api/api.php');
-
 ?>
 <div class="champ-select-top">
 	<div class="champ-title-box">

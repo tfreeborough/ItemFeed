@@ -1,10 +1,12 @@
 <?php
-include_once('class.krumo.php');
-include_once('sr_filter.php');
+include_once('class.krumo.php'); // Krumo is used for debugging
+include_once('sr_filter.php'); // sr_filter is used to insert items from summoners rift
+
+
 define("ROOT",$_SERVER['DOCUMENT_ROOT'].'/',true);
 class api{
 
-    private $key = '90816578-c532-40d1-920f-d1f5012ced63';
+    private $key = '90816578-c532-40d1-920f-d1f5012ced63'; // Private api key goes here
 
     function __construct(){
 
@@ -14,6 +16,9 @@ class api{
      * @returns array
      */
     public function updateChampionsList(){
+        /*
+         * Grab all champion info and write it out to a file so we can use it later
+         */
         $response = file_get_contents('https://global.api.pvp.net/api/lol/static-data/euw/v1.2/champion?champData=info&api_key='.$this->key);
         $champions = fopen(ROOT.'api/champions.json','r+');
         ftruncate($champions,0);
@@ -22,6 +27,9 @@ class api{
     }
 
     public function updateItemsList(){
+        /*
+         * call the filters class to update items list
+         */
         $filter = new filters;
         $filter->writeSRFilterJSON();
     }
@@ -63,6 +71,9 @@ class api{
      * @returns string
      */
     public function imageFromID($id){
+        /*
+         * Convert all champion id'd to their respective image links
+         */
         $champions = json_decode($this->getChampionsList());
         $champions = $champions->data;
         foreach($champions as $champion){

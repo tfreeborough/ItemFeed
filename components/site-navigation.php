@@ -4,6 +4,9 @@
     <li><a href="javascript:void(0)" onclick="menuPageLoad('about-us.php',this)">About Us</a></li>
 </ul>
 <script>
+    /*
+    Because the how it works page is so long, we need to run a function to add a custom scrollbar after its loaded.
+     */
     var howItWorks = function() {
         $('.about-us').attr('data-mcs-theme', 'rounded-dots').mCustomScrollbar({
             mouseWheel: {scrollAmount: 275}

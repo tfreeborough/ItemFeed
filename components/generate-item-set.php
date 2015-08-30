@@ -1,5 +1,8 @@
-
 <?php
+/*
+ * This file is used to actually generate the item set for the user, the headers are set to json and the file is returned as a download
+ * As you can see not too much to this code, thanks to php's json_encode function!
+ */
 include('../api/api.php');
 if(isset($_GET)){
     $set = $_GET;

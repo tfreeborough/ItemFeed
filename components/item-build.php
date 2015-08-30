@@ -1,5 +1,7 @@
 <?php
-
+/*
+ * Base template used for the item builder
+ */
 
 ?>
 <form id="itemset-form">

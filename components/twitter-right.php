@@ -10,6 +10,9 @@
     }(document,"script","twitter-wjs");
 </script>
 <script>
+    /*
+    Inject custom CSS into an iFrame so we can style the twitter widget
+     */
     $(document).ready(function(){
         var i = 0;
         var addCssToIframe = function(n) {

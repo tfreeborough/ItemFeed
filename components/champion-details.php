@@ -1,4 +1,7 @@
 <?php
+/*
+ * This shows the champion details and displays them in an easy to read bar chart sort-of thing
+ */
 include('../api/api.php');
 $champions = new api;
 if (isset($_GET['data'])) {

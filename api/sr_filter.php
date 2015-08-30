@@ -3,10 +3,10 @@
 class filters {
 
     public function writeSRFilterJSON() {
-
-        function __construct() {
-
-        }
+        /*
+         * Writes the current array seen below into a Json file, this can then be read at runtime and a list of items can be made. This will eventually be used with the item static data
+         * when the item call starts displaying correct information again.
+         */
 
         $summRiftItems = array(
 
@@ -81,7 +81,7 @@ class filters {
             "1320" => ["Enchantment: Furor", [3111], 475],
             "1323" => ["Enchantment: Distortion", [3111], 475],
 
-            //Jungle Items, kill me now pls
+            //Jungle Items
 
             "1039" => ["Hunter's Machete", [], 400],
             "3713" => ["Ranger's Trailblazer", [1039], 450],
@@ -254,7 +254,11 @@ class filters {
             "3096" => ["Talisman of Ascension", [3096, 3114], 635],   //Talisman of Ascension
             "3060" => ["Banner of Command", [3105, 3108], 330],   //Banner of command
             "3050" => ["Zeke's Harbinger", [3024, 1052, 1052], 530],   //Zekes harbinger
-
+			"2043" => ["Vision Ward", [], 100],   //vision ward
+			"2044" => ["Stealth Ward", [], 75],   //ward
+			"2139" => ["Elixir of Sorcery", [],250],   //mage elixir
+			"2138" => ["Elixir of Iron", [], 250],   //tankoo elixir
+			"2140" => ["Elixir of Wrath", [], 250],   //AD elixir
             //Trinkits
 
             "3340" => ["Warding Totem", [], 0],   //Warding totem

@@ -1,3 +1,8 @@
+<?php
+/*
+ * I hope you actually read this page because it took me ages to write :D
+ */
+?>
 <div class="about-us">
     <h1>How it works</h1>
     <p>ItemFeed uses the <a href="https://developer.riotgames.com/" target="_blank">Riot Games API</a> to enable players to create fully customised Item Sets for individual champions in League of Legends</p>

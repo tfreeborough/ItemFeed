@@ -1,3 +1,8 @@
+<?php
+/*
+ * The front page, nothing much to really see here.
+ */
+?>
 <div class="front-top">
     <h1>Welcome to ItemFeed</h1>
     <p>
