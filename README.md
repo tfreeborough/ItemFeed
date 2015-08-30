@@ -1,4 +1,4 @@
-# ItemFeed
+# ItemFeed - A Comprehensive Item Set Builder
 Entry for Riot Games 2015 API Challenge 2.0
 
 You can find a running version of this application at - **http://lol-api.tfreeb.com/**
